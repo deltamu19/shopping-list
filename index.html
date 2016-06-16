@@ -3,60 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<title>LIST.ALL</title>
-	<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
 		<div class="main-title">
 			<h1>LIST.ALL</h1>
-			<p>list for all the things</p>
+			<p>list for all the things &#x263A;</p>
 		</div>
 	</header>
 
 	<form>
 		<div class="item-form">
 			<input class="text-item" type="text" name="new-item" placeholder="Enter New Item Here">
-			<button>Add to List</button>
+			<button id="add-button">Add to List</button>
 		</div>	
 	</form>
 
 	<section class="listings">
 		<div class="ready">
 			<h3>Ready List</h3>
-			<form>
-				<input class="input-items" type="checkbox" name="ready-list">Ready List Item One
-				<br>
-				<input class="input-items" type="checkbox" name="ready-list">Ready List Item Two
-				<br>
-				<input class="input-items" type="checkbox" name="ready-list">Ready List Item Three
-				<br>
-				<input class="input-items" type="checkbox" name="ready-list">Ready List Item Five
-				<br>
-				<input class="input-items" type="checkbox" name="ready-list">Ready List Item Four
-				<br>
-				<input class="input-items" type="checkbox" name="ready-list">Ready List Item Five
-			</form>
+			<div class="list-area">
+				<form>
+					<input class="input-items" type="checkbox" name="ready-list">Ready List Item One
+					<br>
+					<input class="input-items" type="checkbox" name="ready-list">Ready List Item Two
+					<br>
+					<input class="input-items" type="checkbox" name="ready-list">Ready List Item Three
+					<br>
+					<input class="input-items" type="checkbox" name="ready-list">Ready List Item Four
+					<br>
+					<input class="input-items" type="checkbox" name="ready-list">Ready List Item Five
+				</form>
+			</div>
 		</div>	
 
 		<div class="done">	
 			<h3>Done List</h3>
-			<form>
-				<input class="input-items" type="checkbox" name="done-list">Done List Item One
-				<br>
-				<input class="input-items" type="checkbox" name="done-list">Done List Item Two
-				<br>
-				<input class="input-items" type="checkbox" name="done-list">Done List Item Three
-				<br>
-				<input class="input-items" type="checkbox" name="done-list">Done List Item Four
-				<br>
-				<input class="input-items" type="checkbox" name="done-list">Done List Item Five
-			</form>
+			<div class="list-area">
+				<form>
+					<input class="input-items" type="checkbox" name="done-list">Done List Item One
+					<br>
+					<input class="input-items" type="checkbox" name="done-list">Done List Item Two
+					<br>
+					<input class="input-items" type="checkbox" name="done-list">Done List Item Three
+					<br>
+					<input class="input-items" type="checkbox" name="done-list">Done List Item Four
+					<br>
+					<input class="input-items" type="checkbox" name="done-list">Done List Item Five
+				</form>
+			</div>
 		</div>
 
 		<div class="move-buttons">
-			<button id="move-ready">Move to Ready</button>
-			<button id="move-done">Move to Done</button>
+			<button id="move-ready">&#x261A; Move to Ready</button>
+			<button id="move-done">Move to Done &#x261B;</button>
 			<button id="trash">Trash</button>
 		</div>
 	</section>
