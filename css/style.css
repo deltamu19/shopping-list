@@ -1,0 +1,78 @@
+
+* {
+	border: 1px solid orange;
+}
+
+br {
+	margin: 2em;
+}
+
+.main-title {
+	height: 8em;
+	width: 30em;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.main-title h1 {
+	font-size: 800;
+	font-weight: 800;
+}
+
+.main-title p {
+	font-size: 400;
+}
+
+.item-form {
+	height: 4em;
+	width: 50em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.text-item {
+	height: 2em;
+	width: 40em;
+	margin-top: 1.20em
+}
+
+.listings {
+	height: 40em;
+	width: 100%;
+}
+
+.listings h3 {
+	text-align: center;
+}
+
+.ready,
+.done {
+	height: 40em;
+	width: 30em;
+}
+
+.ready {
+	margin-left: 10em;
+	float: left;
+	text-align: left;
+}
+
+.done {
+	margin-right: 10em;
+	float: right;
+	text-align: left;
+}
+
+.move-buttons {
+	width: 8em;
+	display: block;
+	margin: 10em auto;
+	text-align: center;
+}
+
+#move-ready,
+#move-done,
+#trash {
+	margin-top: 5em;
+}
