@@ -1,6 +1,4 @@
-* {
-	border: 1px solid white;
-}
+
 
 body,
 button {
@@ -94,7 +92,8 @@ button {
 .move-buttons {
 	width: 12em;
 	display: block;
-	margin: 10em auto;
+	margin: auto;
+	padding: 9em 0;
 	text-align: center;
 }
 
