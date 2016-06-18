@@ -19,6 +19,9 @@ button:hover {
 #new-input,
 button {
 	font-size: 1rem;
+}
+
+button {	
 	width: 7rem;
 	height: 3rem;
 }
@@ -26,7 +29,9 @@ button {
 #new-input,
 button,
 .ready-container,
-.done-container {
+.done-container,
+#search-done,
+#search-ready {
 	border: 0.2rem solid black;
 	border-radius: 0.5rem;
 }
@@ -34,7 +39,6 @@ button,
 #title-head,
 #input-container {
 	width: 75rem;
-	height: 8rem;
 	margin: 0 auto;
 	padding: 1rem 0;
 	text-align: center;
@@ -100,3 +104,35 @@ button,
 	height: 25rem;
 	overflow: scroll;
 }
+
+#ext-container {
+	width: 75rem;
+	height: 13rem;
+	margin: 0 auto;
+}
+
+.ready-filter,
+#fav-container,
+.done-filter {
+	width: 25rem;
+	height: 13rem;
+	float: left;
+}
+
+.ready-filter,
+.done-filter {
+	background-color: lightgray;
+	text-align: center;
+}
+
+#fav-container {
+	background-color: orange;
+}
+
+#search-done,
+#search-ready {
+	width: 20rem;
+	height: 2rem;
+	margin: 2rem 0;
+}
+

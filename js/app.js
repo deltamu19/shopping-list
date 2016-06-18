@@ -58,6 +58,9 @@ $(document).ready(function() {
 			return false
 		}
 	})
+
+	//Select only checked items//
+	
 })
 
 	
