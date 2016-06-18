@@ -3,18 +3,18 @@ $(document).ready(function() {
 		var value = $('#new-input').val();	
 		  var html = 
 		  '<li>' + 
-		  	'<div class='checkbox'>' +
-				'<input type='checkbox' name='items'>'+ value +
+		  	'<div class="checkbox">' +
+				'<input type="checkbox" name="items">'+ value +
               	'<br>' +
             '</div>' +
           '</li>'
 		$('.ready-container ul').append(html)
-		document.getElementById("new-item").reset()
+		document.getElementById('new-item').reset()
 		return false
 	})
 
 	$('#done-move').click(function() {
-		var checked = $('input:checked')
+		var checked = $('#ready-form input:checked')
 		for (var i = 0; i < checked.length; i++) {
 			var item = checked[i]
 			var li = $(item).parent().parent()
@@ -23,8 +23,8 @@ $(document).ready(function() {
 		document.getElementById('done-form').reset()
 	})
 
-	$('ready-move').click(function() {
-		var checked = $('input:checked')
+	$('#ready-move').click(function() {
+		var checked = $('#done-form input:checked')
 		for (var i = 0; i < checked.length; i++) {
 			var item = checked[i]
 			var li = $(item).parent().parent()
@@ -32,8 +32,6 @@ $(document).ready(function() {
 		}
 		document.getElementById('ready-form').reset()
 	})
-
-
 });
 
 
