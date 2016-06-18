@@ -6,63 +6,98 @@
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-	<header>
-		<div class="main-title">
-			<h1>LIST.ALL</h1>
-			<p>list for all the things &#x263A;</p>
-		</div>
-	</header>
-
-	<form>
-		<div class="item-form">
-			<input class="text-item" type="text" name="new-item" placeholder="Enter New Item Here">
-			<button id="add-button">Add to List</button>
-		</div>	
-	</form>
-
-	<section class="listings">
-		<div class="ready">
-			<h3>Ready List</h3>
-			<div class="list-area">
-				<form>
-					<input type="checkbox" name="ready-list" checked>Ready List Item One
-					<br>
-					<input type="checkbox" name="ready-list" checked>Ready List Item Two
-					<br>
-					<input type="checkbox" name="ready-list">Ready List Item Three
-					<br>
-					<input type="checkbox" name="ready-list">Ready List Item Four
-					<br>
-					<input type="checkbox" name="ready-list">Ready List Item Five
-				</form>
-			</div>
-		</div>	
-
-		<div class="done">	
-			<h3>Done List</h3>
-			<div class="list-area">
-				<form>
-					<input type="checkbox" name="done-list">Done List Item One
-					<br>
-					<input type="checkbox" name="done-list" checked>Done List Item Two
-					<br>
-					<input type="checkbox" name="done-list">Done List Item Three
-					<br>
-					<input type="checkbox" name="done-list" checked>Done List Item Four
-					<br>
-					<input type="checkbox" name="done-list">Done List Item Five
-				</form>
-			</div>
-		</div>
-
-		<div class="move-buttons">
-			<button id="move-ready">&#x261A; Move to Ready</button>
-			<button id="move-done">Move to Done &#x261B;</button>
-			<button id="trash">Trash</button>
-		</div>
-	</section>
-
-	
+	<header id="title-head">
+    <h1>List.All</h1>
+    <p>list all the things</p>
+  </header>
+  <div id="input-container">
+    <input id="new-input" type="text" name="new" placeholder="Enter new item here">
+    <button>Add to List</button>
+  </div>
+  <div id="main-container">
+    <div class="list">
+      <h3>Ready List</h3>
+      <div class="ready-container">
+        <ul>
+          <li>
+            <div class="checkbox">
+              <input type="checkbox" name="items">Ready List Item One
+              <br>
+            </div>
+          </li>
+          <li>
+            <div class="checkbox">
+              <input type="checkbox" name="items">Ready List Item Two
+              <br>
+            </div>
+          </li>
+          <li>
+            <div class="checkbox">
+              <input type="checkbox" name="items">Ready List Item Three
+              <br>
+            </div>
+          </li>
+          <li>
+            <div class="checkbox">
+              <input type="checkbox" name="items">Ready List Item Four
+              <br>
+            </div>
+          </li>
+          <li>
+            <div class="checkbox">
+              <input type="checkbox" name="items">Ready List Item Five
+              <br>
+            </div>
+          </li>
+        </ul>
+      </div>  
+    </div>
+    <div class="move-buttons">
+      <button>&#8656; Move to Ready</button>
+      <button>Move to Done &#8658;</button>
+      <button>Trash</button>
+    </div>
+    <div class="list">
+      <h3>Done List</h3>
+      <div class="done-container">
+        <ul>
+          <li>
+            <div class="checkbox">
+              <input type="checkbox" name="items">Done List Item One
+              <br>
+            </div>
+          </li>
+          <li>
+            <div class="checkbox">
+              <input type="checkbox" name="items">Done List Item Two
+              <br>
+            </div>
+          </li>
+          <li>
+            <div class="checkbox">
+              <input type="checkbox" name="items">Done List Item Three
+              <br>
+            </div>
+          </li>
+          <li>
+            <div class="checkbox">
+              <input type="checkbox" name="items">Done List Item Four
+              <br>
+            </div>
+          </li>
+          <li>
+            <div class="checkbox">
+              <input type="checkbox" name="items">Done List Item Five
+              <br>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
