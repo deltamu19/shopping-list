@@ -8,8 +8,13 @@ ul {
 	list-style-type: none;
 }
 
-li {
+#ready-list li,
+#done-list li {
 	font-size: 1.3rem;
+}
+
+#fave-list li {
+	font-size: 0.5rem;
 }
 
 button:hover {
@@ -121,14 +126,25 @@ button,
 
 .ready-filter,
 .done-filter {
-	background-color: lightgray;
 	text-align: center;
 }
 
 #fav-container {
-	background-color: orange;
+	
 }
 
+#fav-container h3 {
+	width: 25rem;
+	height: 2rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#fav-list {
+	width: 25rem;
+	height: 10rem;
+	overflow: scroll;
+}
 #search-done,
 #search-ready {
 	width: 20rem;
