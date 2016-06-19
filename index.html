@@ -49,6 +49,7 @@
       <div class="move-buttons">
          <button id="ready-move">&#8656; Move to Ready</button>
          <button id="done-move">Move to Done &#8658;</button>
+         <button id="fave-move">Add to Favorites</button>
          <button id="trash-move">Trash</button>
       </div>
       <div class="list">
@@ -80,11 +81,11 @@
       </div>
    </div>
    <div id="ext-container">
-  	   <div id="fav-container">
+  	   <div class="fav-sec-container">
          <h3>Favorite Items</h3>
-         <div id="fav-list">
-            <form>
-               <ul>
+         <div class="fav-container">
+            <form id="fave-form">
+               <ul id="fave-list">
                   <li>
                      <div>
                         <input type="checkbox" name="fav-items">Apples

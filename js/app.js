@@ -57,6 +57,22 @@ $(document).ready(function() {
 		}
 	})
 
+	//Add items to favorite list//
+	$('#fave-move').click(function() {
+		var checked = $('input:checked')
+		for (var i = 0; i < checked.length; i++) {
+			var item = checked[i]
+			var li = $(item).parent().parent()
+			$('.fave-container ul').append(li)
+		}
+		document.getElementById('ready-form').reset()
+		document.getElementById('done-form').reset()
+		if (checked.length == 0) {
+			alert('Please select at least one item to move.')
+			return false
+		}
+	})
+
 	//Delete checked items//
 	$('#trash-move').click(function() {
 		var checked = $('input:checked')

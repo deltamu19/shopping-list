@@ -16,16 +16,14 @@ ul {
 #done-list li {
 	text-decoration: line-through;
 }
-#fave-list li {
-	font-size: 0.5rem;
-}
 
 button:hover {
 	background-color: darkgray;
 }
 
 #new-input,
-button {
+button,
+.fav-container li {
 	font-size: 1rem;
 }
 
@@ -102,7 +100,7 @@ button,
 }
 
 .move-buttons button {
-	margin-top: 6rem;
+	margin-top: 4.5rem;
 }
 
 .ready-container,
@@ -119,7 +117,7 @@ button,
 	padding: 1rem;
 }
 
-#fav-container,
+.fav-sec-container,
 #search-container {
 	width: 37.5rem;
 	height: 15rem;
@@ -130,14 +128,14 @@ button,
 	text-align: center;
 }
 
-#fav-container h3 {
+.fav-sec-container h3 {
 	width: 37.5rem;
 	height: 3rem;
 	margin: 0 auto;
 	text-align: center;
 }
 
-#fav-list {
+.fav-container {
 	width: 37.5rem;
 	height: 11rem;
 	overflow: scroll;
