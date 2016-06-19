@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 	//Move items from ready to done list//
 	$('#done-move').click(function() {
-		var checked = $('#ready-form input:checked')
+		var checked = $('input:checked')
 		
 		for (var i = 0; i < checked.length; i++) {
 			var item = checked[i]
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 	//Move items from done to ready list//
 	$('#ready-move').click(function() {
-		var checked = $('#done-form input:checked')
+		var checked = $('input:checked')
 		for (var i = 0; i < checked.length; i++) {
 			var item = checked[i]
 			var li = $(item).parent().parent()
