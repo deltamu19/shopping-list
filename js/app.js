@@ -1,14 +1,26 @@
+var listArray = [] //regular array = key array//
+var listObject = {} //object = key/value array//
+
+
 $(document).ready(function() {
 	//Enter new item to ready list//
-	$('#new-item').submit(function() {
+	$('#new-item').submit(function() {	
 		var value = $('#new-input').val();	
-		  var html = 
+		var html = 
 		  '<li>' + 
 		  	'<div class="checkbox">' +
 				'<input type="checkbox" name="items">'+ value +
               	'<br>' +
             '</div>' +
           '</li>'
+		var num = listObject[value]
+		if (isNaN(num) == true)
+			num = 0 
+		listObject[value] = num + 1
+		if (listObject[value] > 3) {
+			$('#fav-list ul').append(html)
+		}		
+		  
 		$('.ready-container ul').append(html)
 		document.getElementById('new-item').reset()
 		return false
@@ -59,8 +71,21 @@ $(document).ready(function() {
 		}
 	})
 
-	//Select only checked items//
-	
+	//Search items on lists//
+	$('#search-form').submit(function() {
+		$('li').each(function() {
+			var liText = $(this).text().toLowerCase()
+			var searchTerm = $('#search-input').val().toLowerCase()
+			if (liText.indexOf(searchTerm) == -1) {
+				$(this).hide()
+			}
+			else {
+				$(this).show()
+			}
+		})
+		return false
+	})
+
 })
 
 	

@@ -13,6 +13,9 @@ ul {
 	font-size: 1.3rem;
 }
 
+#done-list li {
+	text-decoration: line-through;
+}
 #fave-list li {
 	font-size: 0.5rem;
 }
@@ -35,8 +38,7 @@ button {
 button,
 .ready-container,
 .done-container,
-#search-done,
-#search-ready {
+#search-input {
 	border: 0.2rem solid black;
 	border-radius: 0.5rem;
 }
@@ -112,43 +114,38 @@ button,
 
 #ext-container {
 	width: 75rem;
-	height: 13rem;
+	height: 15rem;
 	margin: 0 auto;
+	padding: 1rem;
 }
 
-.ready-filter,
 #fav-container,
-.done-filter {
-	width: 25rem;
-	height: 13rem;
+#search-container {
+	width: 37.5rem;
+	height: 15rem;
 	float: left;
 }
 
-.ready-filter,
-.done-filter {
+#search-container {
 	text-align: center;
 }
 
-#fav-container {
-	
-}
-
 #fav-container h3 {
-	width: 25rem;
-	height: 2rem;
+	width: 37.5rem;
+	height: 3rem;
 	margin: 0 auto;
 	text-align: center;
 }
 
 #fav-list {
-	width: 25rem;
-	height: 10rem;
+	width: 37.5rem;
+	height: 11rem;
 	overflow: scroll;
 }
-#search-done,
-#search-ready {
+
+#search-input {
 	width: 20rem;
 	height: 2rem;
-	margin: 2rem 0;
+	margin: 0 auto;
 }
 
