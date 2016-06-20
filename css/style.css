@@ -23,7 +23,7 @@ button:hover {
 
 #new-input,
 button,
-.fav-container li {
+.fave-container li {
 	font-size: 1rem;
 }
 
@@ -117,7 +117,7 @@ button,
 	padding: 1rem;
 }
 
-.fav-sec-container,
+.fave-sec-container,
 #search-container {
 	width: 37.5rem;
 	height: 15rem;
@@ -128,14 +128,14 @@ button,
 	text-align: center;
 }
 
-.fav-sec-container h3 {
+.fave-sec-container h3 {
 	width: 37.5rem;
 	height: 3rem;
 	margin: 0 auto;
 	text-align: center;
 }
 
-.fav-container {
+.fave-container {
 	width: 37.5rem;
 	height: 11rem;
 	overflow: scroll;

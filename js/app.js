@@ -1,6 +1,6 @@
-var listArray = [] //regular array = key array//
-var listObject = {} //object = key/value array//
-
+if (!localStorage.listObject) {
+	localStorage.listObject = '{}' //object = key/value array//
+}
 
 $(document).ready(function() {
 	//Enter new item to ready list//
@@ -13,14 +13,15 @@ $(document).ready(function() {
               	'<br>' +
             '</div>' +
           '</li>'
+        var listObject = JSON.parse(localStorage.listObject)
 		var num = listObject[value]
 		if (isNaN(num) == true)
 			num = 0 
 		listObject[value] = num + 1
-		if (listObject[value] > 3) {
-			$('#fav-list ul').append(html)
+		if (listObject[value] == 3) {
+			$('.fave-container ul').append(html)
 		}		
-		  
+		localStorage.listObject = JSON.stringify(listObject)  
 		$('.ready-container ul').append(html)
 		document.getElementById('new-item').reset()
 		return false
@@ -63,10 +64,12 @@ $(document).ready(function() {
 		for (var i = 0; i < checked.length; i++) {
 			var item = checked[i]
 			var li = $(item).parent().parent()
-			$('.fave-container ul').append(li)
+			$(li).clone().appendTo('.fave-container ul')
+			
 		}
 		document.getElementById('ready-form').reset()
 		document.getElementById('done-form').reset()
+		document.getElementById('fave-form').reset()
 		if (checked.length == 0) {
 			alert('Please select at least one item to move.')
 			return false
