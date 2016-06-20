@@ -1,68 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>LIST.ALL</title>
-	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+   <meta charset="UTF-8">
+   <title>LIST.ALL</title>
+   <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-	<header>
-		<div class="main-title">
-			<h1>LIST.ALL</h1>
-			<p>list for all the things &#x263A;</p>
-		</div>
-	</header>
-
-	<form>
-		<div class="item-form">
-			<input class="text-item" type="text" name="new-item" placeholder="Enter New Item Here">
-			<button id="add-button">Add to List</button>
-		</div>	
-	</form>
-
-	<section class="listings">
-		<div class="ready">
-			<h3>Ready List</h3>
-			<div class="list-area">
-				<form>
-					<input type="checkbox" name="ready-list">Ready List Item One
-					<br>
-					<input type="checkbox" name="ready-list">Ready List Item Two
-					<br>
-					<input type="checkbox" name="ready-list">Ready List Item Three
-					<br>
-					<input type="checkbox" name="ready-list">Ready List Item Four
-					<br>
-					<input type="checkbox" name="ready-list">Ready List Item Five
-				</form>
-			</div>
-		</div>	
-
-		<div class="done">	
-			<h3>Done List</h3>
-			<div class="list-area">
-				<form>
-					<input type="checkbox" name="done-list">Done List Item One
-					<br>
-					<input type="checkbox" name="done-list">Done List Item Two
-					<br>
-					<input type="checkbox" name="done-list">Done List Item Three
-					<br>
-					<input type="checkbox" name="done-list">Done List Item Four
-					<br>
-					<input type="checkbox" name="done-list">Done List Item Five
-				</form>
-			</div>
-		</div>
-
-		<div class="move-buttons">
-			<button id="move-ready">&#x261A; Move to Ready</button>
-			<button id="move-done">Move to Done &#x261B;</button>
-			<button id="trash">Trash</button>
-		</div>
-	</section>
-
-	
+   <header id="title-head">
+      <h1>List.All</h1>
+      <p>list all the things</p>
+   </header>
+   <div id="input-container">
+      <form id="new-item">
+         <input id="new-input" type="text" name="new" required="" placeholder="Enter new item here">
+         <button class="add-button" type="submit">Add to List</button>
+      </form>
+   </div>
+   <div id="main-container">
+      <div class="list">
+         <h3>Ready List</h3>
+         <div class="ready-container">
+            <form id="ready-form">
+               <ul id="ready-list">
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" name="items">Milk
+                        <br>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" name="items">Rice
+                        <br>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" name="items">Carrots
+                        <br>
+                     </div>
+                  </li>
+               </ul>
+            </form>  
+         </div>     
+      </div> 
+      <div class="move-buttons">
+         <button id="ready-move">&#8656; Move to Ready</button>
+         <button id="done-move">Move to Done &#8658;</button>
+         <button id="fave-move">Add to Favorites</button>
+         <button id="trash-move">Trash</button>
+      </div>
+      <div class="list">
+         <h3>Done List</h3>
+         <div class="done-container">
+            <form id="done-form">
+               <ul id="done-list">
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" name="items">Orange Juice
+                        <br>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" name="items">Lettuce
+                        <br>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="checkbox">
+                        <input type="checkbox" name="items">Beef Steak
+                        <br>
+                     </div>
+                  </li>
+               </ul>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div id="ext-container">
+      <div class="fave-sec-container">
+         <h3>Favorite Items</h3>
+         <div class="fave-container">
+            <form id="fave-form">
+               <ul id="fave-list">
+                  <li>
+                     <div>
+                        <input type="checkbox" name="fav-items">Apples
+                        <br>
+                     </div>
+                  </li>
+                  <li>
+                     <div>
+                        <input type="checkbox" name="fav-items">Kale
+                        <br>
+                     </div>
+                  </li>
+               </ul>               
+            </form>
+         </div>
+      </div>
+      <div id="search-container">
+         <form id="search-form">
+            <input id="search-input" type="text" name="filter" placeholder="Search items from list here">
+            <button class="search-btn" type="submit">Search Item</button>
+         </form>
+      </div>
+  </div>
+   <script src="http://code.jquery.com/jquery.min.js"></script>
+   <script src="js/app.js"></script>
 </body>
 </html>
